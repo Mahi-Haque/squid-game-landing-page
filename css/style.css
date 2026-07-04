@@ -11,8 +11,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   color: #fff;
-  background-image: url("images/squid-game.jpg");
-  background-repeat: no-repeat;
+  background-image: url("/images/squid-game.jpg");
   position: relative;
   background-size: cover;
   background-position: center;
