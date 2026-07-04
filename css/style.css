@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #fff;
+  background-image: url("/images/squid-game.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.blur {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.one {
+  background: #ff006a;
+  top: -100px;
+  right: -80px;
+}
+
+.two {
+  background: #6d00ff;
+  bottom: -120px;
+  left: -100px;
+}
+
+nav {
+  width: 90;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(18px);
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-right: 80px;
+  margin-left: 70px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff4d8d;
+}
+
+nav i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.hero {
+  width: 90%;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  width: 45%;
+}
+
+.title-logo {
+  width: 320px;
+  margin-bottom: 25px;
+}
+
+.left p {
+  color: #d8d8d8;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 14px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.play {
+  border: none;
+  background: linear-gradient(90deg, #ff007a, #ff9800);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(255, 0, 120, 0.35);
+}
+
+.play:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(255, 0, 120, 0.5);
+}
+
+.trailer {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.trailer:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #ff007a;
+}
+
+button i {
+  margin-right: 10px;
+}
+
+.gallery {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  height: 320px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.4s;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card i {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  font-size: 35px;
+  color: white;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(255, 0, 120, 0.35);
+}
+
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .right {
+    margin-top: 40px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .title-logo {
+    width: 250px;
+  }
+}
